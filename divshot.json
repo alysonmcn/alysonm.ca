@@ -1,0 +1,18 @@
+{
+  "name": "alysonweb",
+  "root": "public",
+  "clean_urls": true,
+  "error_page": "error.html",
+  "forms": {
+    "contact": {
+      "to": "dm09ke@student.ocadu.ca",
+      "from": "{{email}}",
+      "replyTo": "{{name}} <{{email}}>",
+      "subject": "Message Received from {{name}}",
+      "text": "{{message}}",
+      "success": null,
+      "failure": "/error.html"
+    }
+  }
+}
+
