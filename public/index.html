@@ -29,7 +29,20 @@
 			<script type="text/javascript" src="js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
 			<script type="text/javascript" src="js/gen_validatorv31.js"></script>
-		 
+			<script src="assets/js/css_browser_selector.min.js"></script>
+			<script src="assets/js/jquery.js"></script>
+			<script src="assets/js/jquery.mobile.just-touch.js"></script>
+			<script src="assets/js/jquery.easing.1.3.js"></script>
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<script type="text/javascript" async defer src="http://iprodev.com/projects.php?p=mightyslider"></script>
+			<script src="js/mightyslider.min.js"></script>
+			<script src="assets/js/bootstrap-collapse.js"></script>
+			<script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script>	
+			<script src="js/new.js"></script>
+			<script src="js/mailChimp.js"></script>
+			<script src="js/mailStatus.js"></script>
+
+
 			<style>
 			html.win .ilightbox-noscroll, html.win .ilightbox-noscroll .navbar-wrapper {
 				padding-right: 17px;
@@ -57,16 +70,16 @@
 						<ul class="unstyled">
 							<li class="active" data-section="1"><a class="tip" data-toggle="tooltip" data-placement="right" title="Home">
 								<i class="icon-home"></i></a> <span>Home</span></li>
-								<li data-section="2" class=""><a class="tip" data-toggle="tooltip" data-placement="right" title="Video">
+							<li data-section="2" class=""><a class="tip" data-toggle="tooltip" data-placement="right" title="Video">
 									<i class="icon-facetime-video"></i></a> <span>Video</span></li>
-									<li data-section="3" class=""><a class="tip" data-toggle="tooltip" data-placement="right" title="Music">
+							<li data-section="3" class=""><a class="tip" data-toggle="tooltip" data-placement="right" title="Music">
 										<i class="icon-volume-up"></i> </a><span>Music</span></li>
-										<li data-section="4" class="last"><a class="tip" data-toggle="tooltip" data-placement="right" title="Contact">
+							<li data-section="4" class="last"><a class="tip" data-toggle="tooltip" data-placement="right" title="Contact">
 											<i class="icon-envelope"></i></a> <span>Contact</span></li>
 
-										</ul>
-									</nav><!-- /nav -->
-									<nav id="nav-social" class="navigation-social">
+						</ul>
+					</nav><!-- /nav -->
+						<nav id="nav-social" class="navigation-social">
 										<ul >
 											<li ><a href="https://www.facebook.com/pages/Alyson-McNamara/128764500519699" target="_blank" class="facebook">
 												<i class="icon-facebook" ></i></a> </li>
@@ -129,16 +142,17 @@
 													<div class="featurette featurette_full">
 														<div class="mightyslider_carouselModern_skin clearfix" id="video_showcase">
 															<div class="frame" data-mightyslider="width: 1280, height: 350">
-																<ul class="slide_element">
-																	<li class="slide" data-mightyslider="cover:'img/howLong2.jpg', video: 'https://www.youtube.com/watch?v=sqQivCgKQD4', title: 'The White Barn Sessions: How Long Have You Known?', desc: 'Tristan Henderson, Daniel McNamara, Kevin Richards - Audio Engineering <br> Roshan Ahmadvand - Videography'"></li>
-																	<li class="slide" data-mightyslider="cover:'http://b.vimeocdn.com/ts/456/176/456176494_640.jpg', video: 'http://www.youtube.com/watch?v=tXPaOy4aYKY', title: 'Jam Diaries: Life of Vice', desc: 'Kevin Richards - Audio Engineering <br> Andrea Varsany - Videography'"></li>
-																	<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=7eBDBv8ADjs', title: 'Jam Diaries: Well Enough', desc: 'Kevin Richards - Audio Engineering <br> Andrea Varsany - Videography'"></li>
-																	<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=ssvWL12f16w', title: 'Jam Diaries: Wired To Love', desc: 'Ethan Smith - Audio Engineering <br> Steve Lavery - Videography'"></li>
-																	<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=XF4OBo_DQiQ', title: 'Jam Diaries: You Know Why', desc: 'Sean Currell - Audio Engineering <br> Steve Lavery - Videography'"></li>
-																	<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=ApYkWgmqZAA', title: 'Jam Diaries: Flounder When They Flirt', desc: 'Sean Currell - Audio Engineering <br> Steve Lavery - Videography'"></li>
-
-
-												
+																<ul id="video-slider" class="slide_element">
+																		<li class="slide" data-mightyslider="video: 'https://www.youtube.com/watch?v=BjAb81wVjKE', title: 'The White Barn Sessions: Take It All Off', desc: 	'Tristan Henderson, Daniel McNamara, Kevin Richards - Audio Engineering <br> Roshan Ahmadvand - Videography'"></li>
+																		<li class="slide" data-mightyslider="cover:'img/howLong2.jpg', video: 'https://www.youtube.com/watch?v=sqQivCgKQD4', title: 'The White Barn Sessions: How Long Have You Known?', desc: 	'Tristan Henderson, Daniel McNamara, Kevin Richards - Audio Engineering <br> Roshan Ahmadvand - Videography'"></li>
+																		<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=wm25S4xx1cw', title: 'Jam Diaries: We All Heard Nothing', desc: 'Steve Lavery - Audio Engineering <br> Sally Shaar - Videography'"></li>
+																		<li class="slide" data-mightyslider="cover:'http://b.vimeocdn.com/ts/456/176/456176494_640.jpg', video: 'http://www.youtube.com/watch?v=tXPaOy4aYKY', title: 'Jam Diaries: Life of 	Vice', desc: 'Kevin Richards - Audio Engineering <br> Andrea Varsany - Videography'"></li>
+																		<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=7eBDBv8ADjs', title: 'Jam Diaries: Well Enough', desc: 'Kevin Richards - Audio Engineering <br> Andrea 	Varsany - Videography'"></li>
+																		<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=ssvWL12f16w', title: 'Jam Diaries: Wired To Love', desc: 'Ethan Smith - Audio Engineering <br> Steve Lavery 	- Videography'"></li>
+																		<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=XF4OBo_DQiQ', title: 'Jam Diaries: You Know Why', desc: 'Sean Currell - Audio Engineering <br> Steve Lavery 	- Videography'"></li>
+																		<li class="slide" data-mightyslider="video: 'http://www.youtube.com/watch?v=ApYkWgmqZAA', title: 'Jam Diaries: Flounder When They Flirt', desc: 'Sean Currell - Audio Engineering <br> 	Steve Lavery - Videography'"></li>
+																	</ul>
+																	
 																</ul>
 															</div>
 															<div class="details">
@@ -223,7 +237,9 @@
 																	</div><!-- /span12 -->
 																</div><!-- /row-fluid -->
 																<!-- CONTACT FORM -->
-																<form form method="POST" action="/__/forms/contact" class="json">
+																
+																<!-- DIVSHOT method: action="/__/forms/contact" -->
+																<form id="contact-form" form method="POST" action="//formspree.io/alysonmcn@gmail.com" class="json">
 									
 																	<div class="row-fluid">
 																		<div class="span6">
@@ -321,18 +337,9 @@
 				
 											</section></div><!-- /container -->	
 										</div><!-- /wrapper -->		
-	
-										<!-- JAVASCRIPTS -->
-										<script src="assets/js/css_browser_selector.min.js"></script>
-										<script src="assets/js/jquery.js"></script>
-										<script src="assets/js/jquery.mobile.just-touch.js"></script>
-										<script src="assets/js/jquery.easing.1.3.js"></script>
-										<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-										<script type="text/javascript" async defer src="http://iprodev.com/projects.php?p=mightyslider"></script>
-										<script src="js/mightyslider.min.js"></script>
-										<script src="assets/js/bootstrap-collapse.js"></script>
-										<script src="js/new.js"></script>
-										<script src="js/mailChimp.js"></script>
-										<script src="js/mailStatus.js"></script>
-										<script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script>
-									</body></html>
+								
+
+									
+									
+	</body>
+</html>
