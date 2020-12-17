@@ -1,0 +1,245 @@
+
+
+a, b, body, button, div, em, h1, h2, h3, html, img, label, p, span {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline
+}
+
+ol, ul {
+	list-style: none
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none
+}
+
+.hidden {
+	display: none
+}
+
+a {
+	color: #333;
+	text-decoration: none
+}
+
+h1 {
+	display: none;
+	font-size: 14px;
+	margin: 7px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.detail .img, .detail h1 {
+	display: block
+}
+
+button {
+	background: #2ebd59;
+	border-radius: 500px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 11px;
+	min-width: 92px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	margin: 0 10px 0 0;
+	float: left
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+button:hover {
+	background: #1ed760
+}
+
+.can-unfollow button:hover {
+	background: #bd3200
+}
+
+.count {
+	-webkit-perspective: 600px;
+	perspective: 600px;
+	display: inline-block
+}
+
+.count-num {
+	background: #fff;
+	border: 1px solid #d6d5d2;
+	border-radius: 3px;
+	color: #999896;
+	line-height: 10px;
+	min-width: 34px;
+	padding: 6px 8px;
+	text-align: center;
+	white-space: nowrap;
+	margin-left: -1px
+}
+
+.count-num:after, .count-num:before {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	position: absolute;
+	width: 0;
+	right: 100%
+}
+
+.count-num:before {
+	border-right-color: #d6d5d2;
+	border-width: 6px;
+	top: 6px
+}
+
+.count-num:after {
+	border-width: 4.5px;
+	top: 7.5px;
+	border-right-color: #fff
+}
+
+.count-num.back {
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	z-index: 800
+}
+
+.count-num.back, .count-num.front {
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+	transition: -webkit-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out;
+	transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+
+.count-num.front {
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+	position: absolute;
+	z-index: 900
+}
+
+.flip .count-num.front {
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	z-index: 900
+}
+
+.flip .count-num.back {
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+	z-index: 1000
+}
+
+.bd {
+	padding-top: 3px
+}
+
+.widget {
+	_overflow: visible;
+	overflow: hidden;
+	zoom: 1
+}
+
+.img {
+	display: none;
+	height: 56px;
+	overflow: hidden;
+	position: relative;
+	width: 56px;
+	background-size: cover;
+	background-position: 50% 50%;
+	float: left;
+	margin-right: 10px;
+	border-radius: 56px
+}
+
+.img:before {
+	-webkit-box-shadow: inset 0 0 2px rgba(214, 213, 210, .8);
+	box-shadow: inset 0 0 2px rgba(214, 213, 210, .8);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1
+}
+
+.img.placeholder {
+	background-image: url(https://open.scdn.co/cdn/images/follow/avatar-placeholder.2f817d4a.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+
+.theme-dark h1, .theme-dark h1 a {
+	color: #eee
+}
+
+.theme-dark .img:before {
+	-webkit-box-shadow: inset 1 0 2px rgba(40, 40, 40, .8);
+	box-shadow: inset 1 0 2px rgba(40, 40, 40, .8);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1
+}
+
+.following .bt-icon {
+	background-position: -34px 0;
+	margin-left: 1px
+}
+
+.can-unfollow button:hover .bt-icon {
+	background-position: -17px 0
+}
+
+.bt-text {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 1px;
+	margin-left: 13px;
+	padding: 4px 4px 3px 8px
+}
+
+.following .bt-text {
+	letter-spacing: 0
+}
+
+.bt-icon {
+	background-image: url(https://open.scdn.co/cdn/images/follow/sprite@1.b994540b.png);
+	background-position: 0 0;
+	content: "";
+	display: inline-block;
+	height: 17px;
+	position: absolute;
+	top: 3px;
+	width: 17px;
+	left: 3px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-resolution:1.5dppx) {
+	.bt-icon {
+		background-image: url(https://open.scdn.co/cdn/images/follow/sprite.e282a709.gif);
+		background-position: 0 0;
+		background-size: 51px 17px
+	}
+}
+
+/*# sourceMappingURL=follow.css.map*/
