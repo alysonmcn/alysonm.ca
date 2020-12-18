@@ -1,16 +1,16 @@
-$(document).ready(function(){
+$(document).ready(function() {
 	var $win = $(window),
 		isTouch = !!('ontouchstart' in window),
 		clickEvent = isTouch ? 'tap' : 'click';
 
-	
-	
+
+
 	// Video Showcase Example
-	(function(){
+	(function() {
 		var $carousel = $('#video_showcase'),
-		$frame = $('.frame', $carousel),
-		$title = $('div.details #title', $carousel),
-		$desc = $('div.details #desc', $carousel);
+			$frame = $('.frame', $carousel),
+			$title = $('div.details #title', $carousel),
+			$desc = $('div.details #desc', $carousel);
 		$frame.mightySlider({
 			speed: 500,
 			autoScale: 1,
@@ -19,9 +19,17 @@ $(document).ready(function(){
 			// Navigation options
 			navigation: {
 				activateOn: clickEvent,
-				slideSize: '53%'
+				slideSize: '53%',
+				horizontal: true
 			},
-			
+
+			pages: {
+				pagesBar: $('.pages_'),
+				activateOn: 'click',
+				pageBuilder: function(index) {
+					return '<li>' + (index + 1) + '</li>';
+				}
+			},
 			// Buttons options
 			buttons: {
 				prev: $('#video_showcase_prev'),
@@ -30,19 +38,19 @@ $(document).ready(function(){
 
 			// Dragging options
 			dragging: {
-				swingSpeed:    0.1
+				swingSpeed: 0.1
 			}
 		}, {
-			active: function(name, index){
+			active: function(name, index) {
 				$title.html(this.slides[index].options.title);
 				$desc.html(this.slides[index].options.desc);
 			}
 		});
 	})();
 	// End of Video Showcase Example
-	
-	
-	$('a[href*=".jpg"]').each(function(){
+
+
+	$('a[href*=".jpg"]').each(function() {
 		$(this).iLightBox({
 			skin: 'metro-black',
 			fullViewPort: 'fit'
@@ -50,9 +58,14 @@ $(document).ready(function(){
 	});
 });
 
-window.___gcfg = {lang: "en"};
+window.___gcfg = {
+	lang: "en"
+};
 (function() {
-	var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+	var po = document.createElement("script");
+	po.type = "text/javascript";
+	po.async = true;
 	po.src = "https://apis.google.com/js/plusone.js";
-	var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(po, s);
 })();

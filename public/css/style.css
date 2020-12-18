@@ -273,7 +273,7 @@ a.instagram{
 }
 
 .section .title hr {
-	border-color: #151515;
+	border-color: white;
 	border-width: 1px 0 0;
 	margin-top: 50px;
 	width: 100%;
@@ -457,6 +457,10 @@ button:focus {
 	background-color: rgb(243, 205, 148);
 }
 
+#section2 h2 {
+  color: white;
+}
+
 #section2 h6 {
 	padding:15px;
 }
@@ -531,7 +535,7 @@ button:focus {
 	background:#578B83;
 	color: #F1F1F1;
 	padding-bottom: 0px;
-	padding: 70px 0 170px;
+	padding: 70px 0 300px;
 }
 
 #section4 h4.intro {
@@ -871,7 +875,7 @@ text-shadow: 4px 3px 0 rgba(233, 142, 43, 0.97), -4px -3px 0 rgba(228, 42, 42, 0
 	.bandcamp {
 		border: 0;
 		width: 350px;
-		height: 750px;
+		height: 755px;
 		/* webkit-box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .6);
 		box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .6); */
 		margin-bottom:25px;
@@ -1823,7 +1827,7 @@ a.back-to-top:hover {
 	cursor: pointer;
 	overflow: hidden;
 	background: #fff;
-	border: solid 2px #fd6a62;
+	/* border: solid 2px #fd6a62; */
 
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
@@ -1832,7 +1836,7 @@ a.back-to-top:hover {
 	background: #eee;
 }
 .pages_ li.active {
-	background: #fd6a62;
+	background: #ffa400;
 }
 .simple_carousel {
 	width: 100%;
@@ -2235,8 +2239,8 @@ span.default code {
 										   -moz-box-sizing: border-box;
 												box-sizing: border-box;
 
-										-webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, .6);
-												box-shadow: 0 38px 30px -18px rgba(0, 0, 0, .6);
+										/* -webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, .6);
+												box-shadow: 0 38px 30px -18px rgba(0, 0, 0, .6); */
 									}
 									#video_showcase .frame ul li .mSCover {
 										border: #666 1px solid;
@@ -2267,8 +2271,8 @@ span.default code {
 										-webkit-border-radius: 4px;
 												border-radius: 4px;
 
-										-webkit-box-shadow: 0 25px 7px -18px rgba(0, 0, 0, .3);
-												box-shadow: 0 25px 7px -18px rgba(0, 0, 0, .3);
+										/* -webkit-box-shadow: 0 25px 7px -18px rgba(0, 0, 0, .3);
+												box-shadow: 0 25px 7px -18px rgba(0, 0, 0, .3); */
 									}
 									#video_showcase .details #title {
 										color: #000;
