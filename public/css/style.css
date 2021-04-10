@@ -54,6 +54,7 @@ a:hover {
 
 }
 
+
 sup, sub {
    	vertical-align: baseline;
 	position: relative;
@@ -179,6 +180,10 @@ sub { top: 0.4em; }
   -moz-transition: color 1s ease;
   -o-transition: color 1s ease;
   transition: color 1s ease;
+}
+
+.social:focus{
+  color:#969696;
 }
 
 a.facebook{
@@ -567,6 +572,10 @@ button:focus {
     line-height: 20px;
     margin: 0;
     padding-right: 10px;
+}
+
+.contactLinks a:focus {
+  color:#ffffff63;
 }
 
 #section4 .content .span4 {
