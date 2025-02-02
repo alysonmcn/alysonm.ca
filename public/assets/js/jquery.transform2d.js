@@ -13,7 +13,7 @@
  * Licensed under the MIT license.
  *
  * This saved you an hour of work?
- * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
+ * Send me music https://www.amazon.co.uk/wishlist/HNTU0468LQON
  *
  */
 (function( $, window, document, Math, undefined ) {
@@ -88,8 +88,8 @@ if ( supportProperty && supportProperty != _transform ) {
 			}
 		};
 	/* Fix two jQuery bugs still present in 1.5.1
-	 * - rupper is incompatible with IE9, see http://jqbug.com/8346
-	 * - jQuery.css is not really jQuery.cssProps aware, see http://jqbug.com/8402
+	 * - rupper is incompatible with IE9, see https://jqbug.com/8346
+	 * - jQuery.css is not really jQuery.cssProps aware, see https://jqbug.com/8402
 	 */
 	} else if ( /^1\.[0-5](?:\.|$)/.test($.fn.jquery) ) {
 		propertyHook = {
@@ -171,7 +171,7 @@ if ( supportProperty && supportProperty != _transform ) {
 
 			if ( ! $.cssHooks[_transformOrigin] ) {
 
-				// center the transform origin, from pbakaus's Transformie http://github.com/pbakaus/transformie
+				// center the transform origin, from pbakaus's Transformie https://github.com/pbakaus/transformie
 				if ( (centerOrigin = $.transform.centerOrigin) ) {
 					elemStyle[centerOrigin == "margin" ? "marginLeft" : "left"] = -(elem.offsetWidth/2) + (elem.clientWidth/2) + "px";
 					elemStyle[centerOrigin == "margin" ? "marginTop" : "top"] = -(elem.offsetHeight/2) + (elem.clientHeight/2) + "px";
@@ -366,7 +366,7 @@ function matrix( transform ) {
 }
 
 // turns a matrix into its rotate, scale and skew components
-// algorithm from http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp
+// algorithm from https://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp
 function unmatrix(matrix) {
 	var
 			scaleX
@@ -408,7 +408,7 @@ function unmatrix(matrix) {
 	}
 
 	// The recomposition order is very important
-	// see http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp#l971
+	// see https://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp#l971
 	return [
 		[_translate, [+matrix[4], +matrix[5]]],
 		[_rotate, Math.atan2(B, A)],
@@ -418,7 +418,7 @@ function unmatrix(matrix) {
 }
 
 // build the list of transform functions to interpolate
-// use the algorithm described at http://dev.w3.org/csswg/css3-2d-transforms/#animation
+// use the algorithm described at https://dev.w3.org/csswg/css3-2d-transforms/#animation
 function interpolationList( start, end ) {
 	var list = {
 			start: [],

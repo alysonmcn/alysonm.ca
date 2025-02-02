@@ -2,7 +2,7 @@
 // jquery.mobile.vmouse.js and jquery.mobile.event.js
 // They were modified to only provide the touch event shortcuts, and 
 // avoid the rest of the jQuery Mobile framework.
-// The normal jQuery Mobile license applies. http://jquery.org/license
+// The normal jQuery Mobile license applies. https://jquery.org/license
 //
 // This plugin is an experiment for abstracting away the touch and mouse
 // events so that developers don't have to worry about which method of input

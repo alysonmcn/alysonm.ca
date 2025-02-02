@@ -33,7 +33,7 @@ var div = document.createElement( "div" ),
 	_cubicBezier = "cubic-bezier(",
 	easingTable;
 // Only test for transition support in Firefox and Webkit
-// as we know for sure that Opera has too much bugs (see http://csstransition.net)
+// as we know for sure that Opera has too much bugs (see https://csstransition.net)
 // and there's no guarantee that first IE implementation will be bug-free
 jQuery.support.transition =
 	"Moz" + trans in divStyle ? "Moz" + trans :
@@ -47,7 +47,7 @@ easingTable = {
 	linear:         "linear",
 	swing:          "ease-out",
 	bounce:         _cubicBezier + "0,.35,.5,1.3)",
-	// Penner equation approximations from Matthew Lein's Ceaser: http://matthewlein.com/ceaser/
+	// Penner equation approximations from Matthew Lein's Ceaser: https://matthewlein.com/ceaser/
 	easeInQuad:     _cubicBezier + ".55,.085,.68,.53)",
 	easeInCubic:    _cubicBezier + ".55,.055,.675,.19)",
 	easeInQuart:    _cubicBezier + ".895,.03,.685,.22)",

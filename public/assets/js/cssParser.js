@@ -4,7 +4,7 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * https://www.mozilla.org/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
@@ -57,7 +57,7 @@ var kNAMESPACE_RULE_POSITION = "@namespace rule invalid at this position in the 
 var kCHARSET_RULE_CHARSET_SOF = "@charset rule invalid at this position in the stylesheet";
 var kUNKNOWN_AT_RULE = "Unknow @-rule";
 
-/* FROM http://peter.sh/data/vendor-prefixed-css.php?js=1 */
+/* FROM https://peter.sh/data/vendor-prefixed-css.php?js=1 */
 
 var kENGINES = [
   "webkit",

@@ -13,7 +13,7 @@
 ;(function(window){
 	var polyfilter = {
 		// Detect if we are dealing with IE <= 9
-		// http://james.padolsey.com/javascript/detect-_ie-in-js-using-conditional-comments/
+		// https://james.padolsey.com/javascript/detect-_ie-in-js-using-conditional-comments/
 		_ie:			(function(){
 			var undef,
 			v = 3,
@@ -31,7 +31,7 @@
 		_svg_cache: 		{},
 		
 		_create_svg_element: function(tagname,attributes){
-			var xmlns = 'http://www.w3.org/2000/svg';
+			var xmlns = 'https://www.w3.org/2000/svg';
 			var elem = document.createElementNS(xmlns,tagname);
 			for(key in attributes){
 				elem.setAttributeNS(null,key,attributes[key]);
@@ -41,7 +41,7 @@
 		},
 		
 		_create_svg:	function(id,filterelements){
-			var xmlns = 'http://www.w3.org/2000/svg';
+			var xmlns = 'https://www.w3.org/2000/svg';
 			var svg = document.createElementNS(xmlns,'svg');
 			svg.setAttributeNS(null,'width','0');
 			svg.setAttributeNS(null,'height','0');

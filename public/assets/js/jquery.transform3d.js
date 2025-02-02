@@ -14,7 +14,7 @@
  * Licensed under the MIT license.
  *
  * This saved you an hour of work?
- * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
+ * Send me music https://www.amazon.co.uk/wishlist/HNTU0468LQON
  *
  */
 (function( $, window, document ) {
